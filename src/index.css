@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*{
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+    
+   
+}
+
+ @layer base {
+   body {
+     @apply bg-gradient-to-r from-blue-700 to-orange-700;
+     overflow-x:hidden;
+   }
+} 
