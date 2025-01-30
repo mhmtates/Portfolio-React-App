@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import PropTypes from "prop-types";
+import Footer from "../components/Footer";
 
 const Layout = ({ children }) => {
     return (
@@ -8,6 +9,7 @@ const Layout = ({ children }) => {
             <main>
                 {children}
             </main>
+            <Footer/>
         </>
     )
 };

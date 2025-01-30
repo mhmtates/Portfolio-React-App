@@ -1,14 +1,12 @@
 import Hero from "../components/Hero";
-import Section from "../components/Section";
-import Footer from "../components/Footer";
+import Services from "../components/Services";
 
 const Home = () => {
     return (
         <>
         <Hero/>
-        <Section/>
-        <Footer/>
-        </>
+        <Services/>
+       </>
     )
 }
 
