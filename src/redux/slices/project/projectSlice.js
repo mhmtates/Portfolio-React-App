@@ -17,9 +17,15 @@ const initialState = {
 };
 
 const projectSlice = createSlice({
-    name: "projects",
+    name: "project",
     initialState,
-    reducers: {},
+    reducers: {
+        setProjects(state) {
+          return state; // State’i değiştirmediğimiz için doğrudan döndürüyoruz
+        },
+      },
 });
+
+export const projectActions = projectSlice.actions;
 
 export default projectSlice.reducer;
