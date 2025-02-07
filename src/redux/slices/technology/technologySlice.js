@@ -20,7 +20,7 @@ const technologySlice = createSlice({
   initialState,
   reducers: {
     setTechnologies(state) {
-      return state; // State’i değiştirmediğimiz için doğrudan döndürüyoruz
+      return state; 
     },
   },
 });

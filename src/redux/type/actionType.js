@@ -1,2 +1,3 @@
-export const getTechnologies = "getTechnologies";
-export const getProjects = "getProjects";
+export const fetchTechnologies = "fetchTechnologies";
+export const fetchEducationInfos = "fetchEducationInfos";
+export const fetchProjects = "fetchProjects";

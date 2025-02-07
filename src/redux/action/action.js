@@ -1,27 +1,28 @@
 import { technologyActions } from '../slices/technology/technologySlice';
+import { educationActions } from '../slices/education/educationSlice';
 import { projectActions } from '../slices/project/projectSlice';
-import { getTechnologies } from '../type/actionType';
-import { getProjects } from '../type/actionType';
+import { fetchTechnologies } from '../type/actionType';
+import { fetchEducationInfos } from '../type/actionType';
+import { fetchProjects } from '../type/actionType';
 
-// Teknolojileri Yükleme Aksiyonu
-export const getTechnologyList = () => {
+
+export const fetchTechnologyData = () => {
   return async (dispatch) => {
-    try {
-      // Veriyi al (Burada API'den çekiyorsan, bir fetch işlemi yapılabilir)
-      dispatch({type:getTechnologies,payload:technologyActions}); // Redux store'a veriyi gönder
-    } catch (error) {
-      console.error("Teknoloji listesi yüklenirken hata oluştu:", error);
+      dispatch({ type: fetchTechnologies, payload: technologyActions }); 
     }
   };
-};
 
-// Projeleri Yükleme Aksiyonu
-export const getProjectList = () => {
+export const fetchEducationData = () => {
   return async (dispatch) => {
-    try {
-      dispatch({type:getProjects,payload:projectActions}); // Redux store'a güncelleme yap
-    } catch (error) {
-      console.error("Proje listesi yüklenirken hata oluştu:", error);
+     dispatch({ type: fetchEducationInfos, payload: educationActions }); 
+   }
+  };
+
+
+
+export const fetchProjectData = () => {
+  return async (dispatch) => {
+     dispatch({ type: fetchProjects, payload: projectActions }); 
     }
   };
-};
+
