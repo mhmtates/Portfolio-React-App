@@ -1,24 +1,23 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchTechnologyData } from "../redux/action/action";
-import { fetchEducationData } from "../redux/action/action";
+import { educations, experiences } from "../../data";
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { FaGraduationCap } from 'react-icons/fa';
 
+
 const About = () => {
   const dispatch = useDispatch();
   const technologyData = useSelector((state) => (state).technologies.technologies);
-  const educationData = useSelector((state) => (state).educationInfos.educationInfos)
+
+
 
   useEffect(() => {
     dispatch(fetchTechnologyData());
   }, [dispatch]);
 
-  useEffect(() => {
-    dispatch(fetchEducationData());
-  }, [dispatch]);
-
+ 
   return (
     <>
       <main className="container mx-auto">
@@ -53,20 +52,39 @@ const About = () => {
         <section className="px-4 py-10">
           <h1 className="text-3xl font-bold text-center mb-10 text-zinc-950">Eğitim</h1>
           <VerticalTimeline>
-            {educationData.map((edu) => (
+            {educations.map((education) => (
               <VerticalTimelineElement
-                key={edu.id}
+                key={education.id}
                 className="vertical-timeline-element--education"
                 contentStyle={{ background: "#f3f4f6", color: "#333", boxShadow: "0 0 10px 0 rgba(0, 0, 0, 0.2)", borderRadius: "10px" }}
                 contentArrowStyle={{ borderRight: "7px solid  #f3f4f6" }}
-                date={edu.year} 
+                date={education.year}
                 iconStyle={{ background: "#4A90E2", color: "#fff" }}
                 icon={<FaGraduationCap />}
               >
-                <h3 className="text-xl font-bold mb-4">{edu.title}</h3>
-                <h4 className="text-md text-gray-700 mb-4">{edu.faculty}</h4>
-                <h4 className="text-md text-gray-700 mb-4">{edu.department} - {edu.degree}</h4> 
-               
+                <h3 className="text-xl font-bold mb-4">{education.title}</h3>
+                <h4 className="text-md text-gray-700 mb-4">{education.faculty}</h4>
+                <h4 className="text-md text-gray-700 mb-4">{education.department} - {education.degree}</h4>
+
+              </VerticalTimelineElement>
+            ))}
+          </VerticalTimeline>
+        </section>
+        <section className="px-4 py-10">
+          <h1 className="text-3xl font-bold text-center mb-10 text-zinc-950">İş Deneyimi</h1>
+          <VerticalTimeline>
+            {experiences.map((experience) => (
+              <VerticalTimelineElement
+                key={experience.id}
+                className="vertical-timeline-element--experience"
+                contentStyle={{ background: "#f3f4f6", color: "#333", boxShadow: "0 0 10px 0 rgba(0, 0, 0, 0.2)", borderRadius: "10px" }}
+                contentArrowStyle={{ borderRight: "7px solid  #f3f4f6" }}
+                date={experience.year}
+                iconStyle={{ background: "#4A90E2", color: "#fff" }}
+                icon={<FaGraduationCap />}
+              >
+                <h3 className="text-xl font-bold mb-4">{experience.title}</h3>
+                <h4 className="text-md text-gray-700 mb-4">{experience.description}</h4>
               </VerticalTimelineElement>
             ))}
           </VerticalTimeline>
@@ -75,5 +93,6 @@ const About = () => {
     </>
   );
 };
+
 
 export default About;

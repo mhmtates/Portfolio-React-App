@@ -30,7 +30,7 @@ const Navbar = () => {
             <ul className={`flex-col lg:flex-row lg:flex gap-8 text-zinc-950 text-xl font-bold ${menuOpen ? 'flex' : 'hidden'} lg:flex`}>
                 <li><Link to="/">Anasayfa</Link></li>
                 <li><Link to="/hakkimda">Hakkımda</Link></li>
-                <li><Link to="/projects">Projeler</Link></li>
+                <li><Link to="/projeler">Projeler</Link></li>
                 <li><Link to="/contact">İletişim</Link></li>
                 <li className="relative">
                     <button onClick={toggleDropdown} className="focus:outline-none">

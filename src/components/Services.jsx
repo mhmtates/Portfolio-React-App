@@ -1,5 +1,5 @@
 import Card from "../components/UI/Card"
-import { services } from "../constants/services";
+import { services } from "../../data";
 
 const Services = () => {
   return (
