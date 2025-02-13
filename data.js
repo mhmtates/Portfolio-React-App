@@ -20,3 +20,6 @@ export const experiences = [
     { id: 3, title: "Digiway", year: "2024-2025", description: "Digiway şirketinde fullstack developer olarak çalışıyorum." }
 
 ];
+
+
+    

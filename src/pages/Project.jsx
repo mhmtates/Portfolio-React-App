@@ -16,9 +16,13 @@ const Projects = () => {
 
     const [selectedCategory, setSelectedCategory] = useState("Tümü");
 
+   
+
     const filteredProjects = selectedCategory === "Tümü"
         ? projects
         : projects.filter(project => project.category === selectedCategory);
+    
+   
 
     return (
         <section className="container mx-auto px-4 py-10">
@@ -47,7 +51,7 @@ const Projects = () => {
                         <h2 className="text-xl font-bold mt-4">{project.title}</h2>
                         <p className="text-gray-600 mt-2">{project.description}</p>
                         <a
-                            href={project.url}
+                            href= {project.url}
                             target="_blank"
                             rel="noopener noreferrer"
                             role="button"

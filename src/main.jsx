@@ -7,6 +7,7 @@ import App from "./App";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Project from "./pages/Project";
+import Contact from "./pages/Contact";
 import "./index.css";
 
 createRoot(document.getElementById("root")).render(
@@ -18,6 +19,7 @@ createRoot(document.getElementById("root")).render(
             <Route index element={<Home />} />
             <Route path="hakkimda" element={<About />} />
             <Route path="projeler" element={<Project />} />
+            <Route path="iletisim" element={<Contact />} />
           </Route>
         </Routes>
       </BrowserRouter>

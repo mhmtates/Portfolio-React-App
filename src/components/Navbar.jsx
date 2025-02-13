@@ -31,7 +31,7 @@ const Navbar = () => {
                 <li><Link to="/">Anasayfa</Link></li>
                 <li><Link to="/hakkimda">Hakkımda</Link></li>
                 <li><Link to="/projeler">Projeler</Link></li>
-                <li><Link to="/contact">İletişim</Link></li>
+                <li><Link to="/iletisim">İletişim</Link></li>
                 <li className="relative">
                     <button onClick={toggleDropdown} className="focus:outline-none">
                         More

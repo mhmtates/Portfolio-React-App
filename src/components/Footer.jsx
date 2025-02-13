@@ -1,5 +1,5 @@
 import {
-    FaFacebook, FaInstagram, FaTiktok, FaTelegram, FaLinkedin, FaGithub, FaMedium,
+    FaFacebook, FaInstagram, FaLinkedin, FaGithub, FaMedium,
     FaStackOverflow, FaBehance
 } from "react-icons/fa";
 
@@ -8,13 +8,11 @@ const Footer = () => {
     const socials = [
         { id: 1, title: "Facebook", url: "https://www.facebook.com/m.ates.ozates/", icon: <FaFacebook /> },
         { id: 2, title: "Instagram", url: "https://www.instagram.com/mehmet.ates.ozates", icon: <FaInstagram /> },
-        { id: 3, title: "Tiktok", url: "https://www.tiktok.com/@mhmt_ates_ozates", icon: <FaTiktok /> },
-        { id: 4, title: "Telegram", url: "https://www.x.com/MehmetAtes34", icon: <FaTelegram /> },
-        { id: 5, title: "LinkedIn", url: "https://www.linkedin.com/in/mehmet-ateş-özateş-bb8108110", icon: <FaLinkedin /> },
-        { id: 6, title: "Github", url: "https://www.github.com/mhmtates", icon: <FaGithub /> },
-        { id: 7, title: "Medium", url: "https://medium.com/@ozatesatess", icon: <FaMedium /> },
-        { id: 8, title: "Stackoverflow", url: "https://stackoverflow.com/users/17928850/mehmetates", icon: <FaStackOverflow /> },
-        { id: 9, title: "Behance", url: "https://www.behance.net/mehmetatezate", icon: <FaBehance /> }
+        { id: 3, title: "LinkedIn", url: "https://www.linkedin.com/in/mehmet-ateş-özateş-bb8108110", icon: <FaLinkedin /> },
+        { id: 4, title: "Github", url: "https://www.github.com/mhmtates", icon: <FaGithub /> },
+        { id: 5, title: "Medium", url: "https://medium.com/@ozatesatess", icon: <FaMedium /> },
+        { id: 6, title: "Stackoverflow", url: "https://stackoverflow.com/users/17928850/mehmetates", icon: <FaStackOverflow /> },
+        { id: 7, title: "Behance", url: "https://www.behance.net/mehmetatezate", icon: <FaBehance /> }
     ];
 
     return (
