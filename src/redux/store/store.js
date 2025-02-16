@@ -1,4 +1,4 @@
-import { configureStore } from "@reduxjs/toolkit";
+import {configureStore } from "@reduxjs/toolkit";
 import technologyReducer from "../slices/technology/technologySlice";
 import projectReducer from "../slices/project/projectSlice";
 import { thunk } from "redux-thunk";
@@ -8,8 +8,9 @@ export const store = configureStore({
         technologies: technologyReducer,
         projects: projectReducer
     },
-    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(thunk)
-
+    middleware: (getDefaultMiddleware) => getDefaultMiddleware({serializableCheck:false}).concat(thunk)
+  
 });
+
 
 export default store;

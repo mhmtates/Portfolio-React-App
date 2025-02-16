@@ -13,7 +13,7 @@
 
  @layer base {
    body {
-     @apply bg-gradient-to-r from-blue-700 to-orange-700;
+     @apply bg-slate-400;
      overflow-x:hidden;
    }
 } 
