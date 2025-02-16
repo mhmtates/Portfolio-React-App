@@ -45,8 +45,8 @@ const Contact = () => {
 
   
     return (
-        <main className="container mx-auto px-4 py-12 ">
-            <section className="bg-teal-500">
+        <>
+            <section className= "container bg-orange-400  mx-auto px-4 py-12 ">
                 <h1 className="text-4xl text-center font-bold mb-12">Bana Ulaşın</h1>
 
                 {/* Başarı bildirimi */}
@@ -119,7 +119,7 @@ const Contact = () => {
             </section>
 
             {/* İletişim Bilgileri */}
-            <section className="grid grid-cols-1 sm:grid-cols-3 gap-8 bg-cyan-700 text-white text-center p-12 mt-16 rounded-lg">
+            <section className="grid grid-cols-1 sm:grid-cols-3 gap-8 bg-blue-500 text-white text-center p-12 mt-16 rounded-lg w-full">
                 {personalInfo.map((info) => (
                     <div key={info.id} className="flex flex-col items-center gap-4">
                         <span className="text-4xl">{info.icon}</span>
@@ -128,7 +128,7 @@ const Contact = () => {
                     </div>
                 ))}
             </section>
-        </main>
+        </>
     );
 };
 
