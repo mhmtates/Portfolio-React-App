@@ -1,13 +1,13 @@
 Kişisel Portföy Sitesi
 ----
 
-React ile kişisel portföy sitesi yaptım.Proje,anasayfa,hakkımda,projelerim ve iletişim bölümlerinden oluşmaktadır.  Projede state yönetimi için redux-toolkit  ve animasyonlar için framer-motion teknolojilerini kullandım.
+React ile bir kişisel portföy sitesi yaptım. Proje,anasayfa,hakkımda,projelerim ve iletişim bölümlerinden oluşmaktadır.
 
 Kullanılan Teknolojiler 
 --- 
- <li>React</li>
- <li>Redux-Toolkit</li>
- Framer Motion 
- Vite.js
- Tailwind.css
+<li>React</li>
+<li>Redux-Toolkit</li>
+<li>Framer Motion</li> 
+<li>Vite.js</li> 
+<li>Tailwind.css</li>
  
