@@ -5,8 +5,8 @@ React ile kişisel portföy sitesi yaptım.Proje,anasayfa,hakkımda,projelerim v
 
 Kullanılan Teknolojiler 
 --- 
- React
- Redux-Toolkit
+ <li>React</li>
+ <li>Redux-Toolkit</li>
  Framer Motion 
  Vite.js
  Tailwind.css
